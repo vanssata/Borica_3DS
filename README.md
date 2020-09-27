@@ -18,3 +18,5 @@ $terminal_id, $merchant_test_private_key,$merchant_test_passphrase,$borica_test_
 2. Добавяне на разаличните видове заявки към APGW
 
 #Скрипта работи на PHP >=5.6
+## Позавършне скрипт в който има генрация на ключове може да видите:
+1. Omnypay: https://github.com/gentor/omnipay-borica
