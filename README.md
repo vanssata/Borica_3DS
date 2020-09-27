@@ -1,7 +1,7 @@
 # Borica 
 Към момнета това е просто тестов пример. 
 
-За да го тествате продто трябва да въведете: 
+За да го тествате първо трябва да въведете стойности на, или техните еквиваленти за реялна среда: 
 ```php
 $terminal_id, $merchant_test_private_key,$merchant_test_passphrase,$borica_test_public_key,$test_return_url
 ```
@@ -17,3 +17,4 @@ $terminal_id, $merchant_test_private_key,$merchant_test_passphrase,$borica_test_
 1. Добавяне на коректна докоментация.
 2. Добавяне на разаличните видове заявки към APGW
 
+#Скрипта работи на PHP >=5.6
