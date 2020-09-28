@@ -26,6 +26,39 @@ $terminal_id, $merchant_test_private_key,$merchant_test_passphrase,$borica_test_
 openssl genrsa -out {teminal_id}_{date}_{state}.key -aes256 2048 #generate private key
 openssl req -new -key {teminal_id}_{date}_{state}.key -out {teminal_id}_{date}_{state}.csr
 ```
+## Response codes 
+
+|Response Code (RC)|RC DESCRIPTION |    
+|------------------|---------------|   
+|00                | Sucessfull    |
+|                  | => Timeout |
+|"01"              | Refer to card issuer |
+|"04"              | Pick Up |
+|"05"              | Do not Honour |
+|"13"              | Invalid amount |
+|"30"              | Format error |
+|"65"              | Soft Decline |
+|"91"              | Issuer or switch is inoperative |
+|"96"              | System Malfunction |    
+                 
+| ERR_GWP_CODES    |   DESCRIPTION |
+|------------------|---------------|
+| -1 | A mandatory request field is not filled in / В заявката не е попълнено задължително поле|
+| -3 | Acquirer host (NS) does not respond or wrong format of e-gateway response template file / Aвторизационният хост не отговаря или форматът на отговора е неправилен|
+| -4 | No connection to the acquirer host (NS) / Няма връзка с авторизационния хост|
+| -11 | Error in the "Currency" request field / Грешка в поле "Валута"  в заявката|
+| -12 | Error in the "Merchant ID" request field / Грешка в поле "Merchant ID / Идентификатор на търговец|
+| -15 | Error in the "RRN" request field / Грешка в поле "RRN" в заявката|
+| -17 | Грешка при проверка на P_SIGN|
+| -19 | Error in the authentication information request or authentication failed / Грешка в искането за автентификация или неуспешна автентификация|
+| -20 | A permitted time interval (1 hour by default) between the transaction Time Stam prequest field and the e-Gateway time is exceeded / Разрешената  разлика между времето на сървъра на търговеца и e-Gateway сървъра е надвишена|
+| -21 | The transaction has already been executed / Транзакцията вече е била изпълнена|
+| -25 | Transaction canceled (e.g. by user) / Транзакцията е отказана (напр. от картодържателя|
+| -27 | Invalid merchant name / Неправилно име на търговеца|
+| -32 | Duplicate declined transaction / Дублирана отказана транзакция|
+
+
+
 # Благодарение на [dimitarminchev](https://gist.github.com/dimitarminchev)
 ## Simple exmaple [simple_example.php](other_file.md)
 
