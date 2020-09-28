@@ -57,15 +57,13 @@ openssl req -new -key {teminal_id}_{date}_{state}.key -out {teminal_id}_{date}_{
 | -27 | Invalid merchant name / Неправилно име на търговеца|
 | -32 | Duplicate declined transaction / Дублирана отказана транзакция|
 
-
-
-# Благодарение на [dimitarminchev](https://gist.github.com/dimitarminchev)
-## Simple exmaple [simple_example.php](other_file.md)
+# Пример благодарение на [dimitarminchev](https://gist.github.com/dimitarminchev/)
+- Виж примера в [gist](https://gist.github.com/dimitarminchev/08d8ab833fa481a8cc5c1e365a16c05e)
+- Виж PHP сорс кода на примера [simple_example.php](simple_example.php)
 
 ## Тестови карти
 | CART Number      | Response code       |
 |------------------|---------------------|
-|5100770000000022  | 00                  |
 |5100770000000022  | 00                  |
 |4341792000000044  | 00 3DS pass: 111111 |
 |5555000000070019  | 04                  |
