@@ -18,3 +18,11 @@ $terminal_id, $merchant_test_private_key,$merchant_test_passphrase,$borica_test_
 2. Добавяне на различните видове заявки към APGW
 
 #Скрипта работи на PHP >=5.6
+## Работеща генерация на ключ на сървъра: 
+```bash
+# {terminal} - terminal id 
+# {date} - current date format is YYYYMMDD
+# {sate} - P for production or D for development
+openssl genrsa -out {teminal_id}_{date}_{state}.key -aes256 2048 #generate private key
+openssl req -new -key {teminal_id}_{date}_{state}.key -out {teminal_id}_{date}_{state}.csr
+```
