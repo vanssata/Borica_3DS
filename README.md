@@ -26,8 +26,8 @@ $terminal_id, $merchant_test_private_key,$merchant_test_passphrase,$borica_test_
 openssl genrsa -out {teminal_id}_{date}_{state}.key -aes256 2048 #generate private key
 openssl req -new -key {teminal_id}_{date}_{state}.key -out {teminal_id}_{date}_{state}.csr
 ```
-Благодарение на [dimitarminchev](https://gist.github.com/dimitarminchev)
-
+# Благодарение на [dimitarminchev](https://gist.github.com/dimitarminchev)
+## Simple exmaple [simple_example.php](other_file.md)
 
 ## Тестови карти
 | CART Number      | Response code       |
@@ -61,4 +61,4 @@ openssl req -new -key {teminal_id}_{date}_{state}.key -out {teminal_id}_{date}_{
 |160.00 - 170.00| 	96| 	System Malfunction|
 |180.00 - 190.00| 	  |Timeout|
 
-## Simple exmaple
+
